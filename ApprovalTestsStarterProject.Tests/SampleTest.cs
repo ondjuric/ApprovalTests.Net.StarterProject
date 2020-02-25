@@ -1,18 +1,17 @@
-﻿using System;
-using ApprovalTests.Core;
+using ApprovalTests;
 using ApprovalTests.Reporters;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ApprovalTests.Net.StarterProject
+namespace ApprovalTestsStarterProject.Tests
 {
     [TestClass]
-    [UseReporter(typeof(DiffReporter))]
+    [UseReporter(typeof(VisualStudioReporter))]
     public class SampleTest
     {
         [TestMethod]
         public void TestStraightMsTest()
         {
-            Assert.AreEqual(5,5);
+            Assert.AreEqual(5, 5);
         }
         [TestMethod]
         public void TestWithApprovalTests()

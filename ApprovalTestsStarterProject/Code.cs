@@ -1,4 +1,6 @@
-﻿namespace ApprovalTests.Net.StarterProject
+﻿using System;
+
+namespace ApprovalTestsStarterProject
 {
     public class Code
     {
